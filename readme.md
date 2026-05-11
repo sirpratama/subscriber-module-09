@@ -19,7 +19,7 @@ The connection URL `amqp://guest:guest@localhost:5672` can be broken down as fol
 
 To simulate a slow subscriber, `thread::sleep(ten_millis)` was uncommented in the handler, introducing a 1-second delay for every message processed. The publisher was then run multiple times in quick succession.
 
-![Multiple Spikes Queue](images/multiple spikes.png)
+![Multiple Spikes Queue](images/multiple%20spikes.png)
 
 ### Why is the total number of queued messages as such?
 
@@ -31,11 +31,11 @@ By running three or more subscriber instances all connected to the same `user_cr
 
 **Multiple subscriber consoles** — messages are split across instances:
 
-![Multiple Subscribers](images/slow start.png)
+![Multiple Subscribers](images/slow%20start.png)
 
 **RabbitMQ chart** — queue drains significantly faster than with a single slow subscriber:
 
-![Spike Result](images/slow start spike result.png)
+![Spike Result](images/slow%20start%20spike%20result.png)
 
 ### Why does the queue reduce quicker?
 
